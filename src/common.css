@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+     background-color: #e0ffff;
+}
+.wrapper {
+    width: 100%;
+    max-width: 390px;
+    margin: 0 auto;
+   
+}
+
+

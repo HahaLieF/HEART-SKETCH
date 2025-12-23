@@ -1,0 +1,86 @@
+:root {
+    /* 今日のまとめ
+    ワイヤーフレームに合わせて白寄りに調整（主カードなので他より少しだけ濃度を残す） */
+    --card-summary-bg: #e6d6e6ff;
+
+    /* 感情吐き出し
+    彩度を抑えて、やさしいミント調に */
+    --card-emotion-bg: #bdf3bdff;
+
+    /* 記録一覧
+     刺激が強くならないよう、黄色寄りにトーンダウン */
+    --card-records-bg: #f6d98bff;
+
+    /* 自分取扱説明書
+     落ち着いた淡いピンクに調整 */
+    --card-manual-bg: #f3dde1ff;
+
+  /* 共通枠線 */
+    --card-border: #000;
+}
+
+.home-header {
+    margin-top: 80px;
+    text-align: center;
+}
+
+.home-main {
+    margin-top: 96px;
+    padding-inline: 22px;
+}
+
+.home-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 56px;
+    margin:  0 auto;
+}
+
+.home-cards .home-card-title {
+    font-size: 0.9rem;
+}
+
+.home-card {
+    padding: 24px 0;
+    border-radius: 20px;
+    display: flex;
+    flex-direction:column;
+    border: 2px solid var(--card-border);  
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08); 
+}
+
+.home-card .common-card-description {
+    font-size: 0.65rem;
+    text-align: center;
+    margin-top: 8px;
+
+}
+
+
+.card-summary {
+    border-width: 4px; /* 2 → 4 ぐらい */
+    box-shadow: 0 6px 14px rgba(0,0,0,0.18);
+    background-color: var(--card-summary-bg);
+}
+
+.card-summary span {
+    font-size: 0.65rem;
+    padding-right: 11px;
+    text-align: left;
+    margin: 8px 0 0 16px;
+}
+
+.card-emotion {
+    background-color: var(--card-emotion-bg);
+    gap: 2px; /* テキスト量が少ないため、視認性調整 */
+}
+
+.card-records {
+    background-color: var(--card-records-bg);
+    
+}
+
+.card-manual {
+    background-color: var(--card-manual-bg);
+}
